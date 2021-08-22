@@ -64,6 +64,7 @@ import { SquadAssembleComponent } from './screens/order-tour/squad-assemble/squa
 import { TourPanelComponent } from './screens/order-tour/additions/tour-panel/tour-panel.component';
 import { TypographyComponent } from './components/typography/typography.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -127,7 +128,7 @@ import { TypographyComponent } from './components/typography/typography.componen
     SleepingOptionsByDayComponent,
     SquadAssembleComponent,
     TourPanelComponent,
-    TypographyComponent
+    TypographyComponent,
   ],
   imports: [
     BrowserModule,
