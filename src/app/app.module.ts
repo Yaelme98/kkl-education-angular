@@ -149,7 +149,7 @@ import { FacilitiesComponent } from './screens/order-tour/facilities/facilities.
     FormComponent,
     FacilitiesComponent,
     FlexTableComponent,
-    MapsComponent
+    MapsComponent,
   ],
   imports: [
     BrowserModule,
