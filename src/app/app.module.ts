@@ -86,6 +86,10 @@ import { SquadAssembleComponent } from './screens/order-tour/squad-assemble/comp
 import { NumberToTimePipe } from './utilities/pipes/numberToTime.pipe';
 import { FormHeaderComponent } from './components/form/form-header/form-header.component';
 import { InputDateComponent } from './components/form/input-date/input-date.component';
+import { ModalComponent } from './components/modal/modal.component';
+import { AddActivityComponent } from './screens/order-tour/facilities/add-activity/add-activity.component';
+import { AddFacilityComponent } from './screens/order-tour/facilities/add-facility/add-facility.component';
+import { SaveActivityComponent } from './screens/order-tour/facilities/save-activity/save-activity.component';
 
 @NgModule({
   declarations: [
@@ -170,7 +174,11 @@ import { InputDateComponent } from './components/form/input-date/input-date.comp
     TimelineCardComponent,
     SvgIconComponent,
     SimpleCardComponent,
-    InputDateComponent
+    InputDateComponent,
+    ModalComponent,
+    AddActivityComponent,
+    AddFacilityComponent,
+    SaveActivityComponent
 
   ],
   imports: [

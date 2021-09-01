@@ -8,6 +8,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class SleepingOptionsByDayComponent implements OnInit {
   currentDay: number = 0;
   @Output() emitCurrentDay: EventEmitter<number> = new EventEmitter();
+  @Input() showSleepAreas: boolean = true
   @Input() sleepingOptionsByDay: {
     day: string;
     options: {
@@ -18,7 +19,7 @@ export class SleepingOptionsByDayComponent implements OnInit {
       singleUnit: string;
     }[];
   }[] = [];
-  constructor() {}
+  constructor() { }
 
   previousPage() {
     this.currentDay = this.currentDay - 1;
@@ -34,7 +35,7 @@ export class SleepingOptionsByDayComponent implements OnInit {
     this.emitCurrentDayHandler();
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   emitCurrentDayHandler() {
     this.emitCurrentDay.emit(this.currentDay);
